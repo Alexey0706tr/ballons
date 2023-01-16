@@ -1,0 +1,90 @@
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: Roboto
+
+html
+    font-size: 62.5%
+body
+    padding: 5rem
+    
+.conteiner
+    background-color: #edebeb
+.header
+    position: relative
+    background: linear-gradient(90deg, rgba(88,50,21,0.427608543417367) 38%, rgba(0,0,0,0.427608543417367) 64%),url(../img/1.jpg)
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 81%)
+    height: 95vh
+    &__logo
+        width: 7rem
+        height: 7rem
+        top: 5rem
+        left: 5rem
+        position: absolute
+    &__box
+        letter-spacing: .3rem
+        top: 50%
+        left: 50%
+        position: absolute
+        transform: translate(-50%,-50%)
+        width: 100%
+        text-align: center
+        
+        
+
+.title-item
+    
+    &__main
+        display: block
+        font-size: 7rem
+        color: #fff
+        line-height: 7rem
+        animation: 3s speed .2s
+     
+
+    &__secondary
+        display: block
+        font-size: 4rem
+        color: #fff
+        transform: uppercase
+        margin-bottom: 3rem
+        animation: 3s speed1 .2s
+        
+.btn 
+    display: inline-block
+    text-decoration: none
+    color: #000
+    padding: 1rem 4rem
+    background: #fff
+    border-radius: 5rem
+    font-size: 2rem
+    &:hover
+        transform: translateY(.2rem)
+        box-shadow: .2rem .6rem 2rem .1rem #000
+        
+
+
+
+
+@keyframes speed
+    0%
+        opacity: 0
+        transform: translateX(-10rem)
+    60%
+        transform: translateX(10rem)
+    100%
+        opacity: 1
+        transform: translateX(0rem)
+
+@keyframes speed1
+    0%
+        opacity: 0
+        transform: translateX(10rem)
+    60%
+        transform: translateX(-10rem)
+    100%
+        opacity: 1
+        transform: translateX(0rem)
+        
+        
